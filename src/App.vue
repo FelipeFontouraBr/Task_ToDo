@@ -3,8 +3,11 @@
 <div>
   <div class="container">
     <div class="row">
-      <div class="col-md-5 mt-5">
-        <input class="form-control mt-5 ml-5">
+      <div class="col-md-5">
+        <input class="form-control">
+      </div>
+      <div class="col-md-2">
+        <button class="btn btn-primary">Added</button>
       </div>
     </div>
   </div>
@@ -23,7 +26,7 @@ export default {
 
 <style>
 .row {
-  margin-top: 150px; 
-  margin-left: 200px; 
+  margin-top: 200px;
+
 }
 </style>
