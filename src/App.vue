@@ -3,17 +3,20 @@
 <div>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-           <div class="input-group">
-                <input type="text" class="form-control">
-           </div>
+      <form>
+        <div class="col-md-6">
+          <div class="input-group">
+            <input type="text" class="form-control">
+          </div>
         </div>
-      <div class="col-md-2">
-        <button class="btn btn-primary">Added</button>
-      </div>
+        <div class="col-md-2">
+          <button class="btn btn-primary">Added</button>
+        </div>
+      </form>
     </div>
   </div>
 </div>
+
 </template>
 
 <script>
