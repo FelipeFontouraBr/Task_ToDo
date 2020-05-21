@@ -2,8 +2,8 @@
 
 <div>
   <div class="container">
-    <div class="row">
-      <form>
+    <form id="formu">
+    <div class="row">      
         <div class="col-md-6">
           <div class="input-group">
             <input type="text" class="form-control">
@@ -11,9 +11,9 @@
         </div>
         <div class="col-md-2">
           <button class="btn btn-primary">Added</button>
-        </div>
-      </form>
+        </div>      
     </div>
+    </form>
   </div>
 </div>
 
@@ -33,5 +33,8 @@ export default {
 .row {
   margin-top: 180px;
   margin-left: 200px;  
+}
+#formu {
+  background-color: blue;
 }
 </style>
