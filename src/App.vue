@@ -4,7 +4,7 @@
   <div class="container">
     <form>
       <div class="row">      
-          <div class="col-md-5">
+          <div class="col-md-6">
             <div class="input-group">
               <input type="text" class="form-control">
             </div>
