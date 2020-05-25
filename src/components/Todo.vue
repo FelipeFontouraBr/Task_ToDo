@@ -24,5 +24,8 @@ export default {
 </script>
 
 <style scoped>
-
+.checked {
+    text-decoration: line-through;
+    color: lightblue;
+}
 </style>
