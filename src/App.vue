@@ -15,7 +15,7 @@
       </div>
     </form>
     <div class="todo-list"><!--Aqui vamos colocar as configurações do todo-list-->
-      
+      <todo v-for="t in todos" :key="t.id" @toggle="toggleTodo" @remove="removeTodo" :todo="t"/>
     </div>
   </div>
 </div>
