@@ -15,7 +15,7 @@
       </div>
     </form>
     <div class="todo-list"><!--Aqui vamos colocar as configurações do todo-list-->
-
+      
     </div>
   </div>
 </div>
@@ -27,7 +27,11 @@ import "bootstrap/dist/css/bootstrap.css"
 import "font-awesome/css/font-awesome.css"
 
 export default {
-  name: 'app',
+  name: "app",
+  components: {},
+  data() {
+    return { todos: [], todo: { checked: false}};
+  }
   }
 
 </script>
