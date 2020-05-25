@@ -1,7 +1,6 @@
 <template>
     <div class="row">
-        <div class="col-md-5">
-
+        <div class="col-md-5" :class="{checked: todo.checked}">
 
         </div>        
     </div>
@@ -9,7 +8,9 @@
 
 <script>
 export default {
-    
+    props: {
+        todo: {type: Object, required: true}
+    }
 }
 </script>
 
