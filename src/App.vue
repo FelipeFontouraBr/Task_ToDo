@@ -3,10 +3,10 @@
 <div>
   <div class="container">    
     <form v-on:submit.prevent="addTodo(todo)">
-      <div class="row">      
-          <div class="col-md-6">
-            <div class="input-group">
-              <input type="text" v-model="todo.description" class="form-control" placeholder="New Task">
+      <div class="row" id="ipt">      
+          <div class="col-md-6" >
+            <div class="input-group" >
+              <input type="text" v-model="todo.description" class="form-control" placeholder="New Task" >
             </div>
           </div>
           <div class="col-md-4">
@@ -57,8 +57,15 @@ export default {
 </script>
 
 <style>
-.row {
+.container {
   margin-top: 180px;
-  margin-left: 200px;  
+  margin-left: 100px;
+}
+.row {
+  margin-top: 40px;
+  margin-left: 210px;
+}
+#ipt {
+  margin-left: 200px;
 }
 </style>
