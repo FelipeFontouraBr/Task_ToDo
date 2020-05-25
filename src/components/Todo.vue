@@ -1,9 +1,11 @@
 <template>
-    <div class="row">
-        <div class="col-md-5" :class="{checked: todo.checked}">
-            <div class="col-md-2">
-                <i class="icon" :class="todo.checked ? 'icon-check' : 'icon-time'"></i>
-            </div>
+    <div class="row" :class="{checked: todo.checked}">
+        <!--<div class="col-md-5" :class="{checked: todo.checked}">-->
+        <div class="col-md-2">
+            <i class="icon" :class="todo.checked ? 'icon-check' : 'icon-time'"></i>
+        </div>        
+        <div class="col-md-5">
+            {{ todo.description }}
         </div>        
     </div>
 </template>
