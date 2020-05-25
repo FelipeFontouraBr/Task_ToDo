@@ -2,14 +2,14 @@
 
 <div>
   <div class="container">
-    <form>
+    <form v-on:submit.prevent="addTodo(todo)">
       <div class="row">      
           <div class="col-md-6">
             <div class="input-group">
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" placeholder="New Task">
             </div>
           </div>
-          <div class="col-md-2">
+          <div class="col-md-4">
             <button class="btn btn-primary">Added</button>
           </div>      
       </div>
