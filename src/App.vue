@@ -59,8 +59,8 @@ export default {
 
 <style>
 .container {
-  margin-top: 160px;
-  margin-left: 100px;
+  margin-top: 90px;
+  margin-left: 140px;
 }
 .row {
   margin-top: 30px;
