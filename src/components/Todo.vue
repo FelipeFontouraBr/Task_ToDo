@@ -1,14 +1,14 @@
 <template>
 <div class="row">
     <div class="col-md-7" :class="{checked: todo.checked}">
-            <div class="col-md-5">
-            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
+        <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
             {{todo.description}}        
             <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary">
                 <span v-if="todo.checked">Desmarcar</span>
                 <span v-else>Concluído</span>
             </button>
-            </div>
+            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger">Remover
+            </button>            
     </div>
 </div>
 </template>
