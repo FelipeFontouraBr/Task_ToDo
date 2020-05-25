@@ -1,7 +1,9 @@
 <template>
     <div class="row">
         <div class="col-md-5" :class="{checked: todo.checked}">
-
+            <div class="col-md-2">
+                <i class="icon" :class="todo.checked ? 'icon-check' : 'icon-time'"></i>
+            </div>
         </div>        
     </div>
 </template>
