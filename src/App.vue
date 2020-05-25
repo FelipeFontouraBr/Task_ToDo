@@ -37,7 +37,14 @@ export default {
       todo.id = Date.now();
       this.todos.push(todo);
       this.todo = { checked: false};
-    }
+    },
+    toggleTodo(todo){ //Função do onclick
+      const index = this.todos.findIndex(item => item.id === todo.id) 
+      if (index > -1){
+        const checked = !this.todos[index].checked;
+        this.$set(this.todos, index, {...this.todos[index, checked]});
+      }
+    },
   }
   }
 
