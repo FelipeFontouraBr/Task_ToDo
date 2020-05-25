@@ -31,6 +31,13 @@ export default {
   components: {},
   data() {
     return { todos: [], todo: { checked: false}};
+  },
+  methods: {
+    addTodo(todo) {
+      todo.id = Date.now();
+      this.todos.push(todo);
+      this.todo = { checked: false};
+    }
   }
   }
 
