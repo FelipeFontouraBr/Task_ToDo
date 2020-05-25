@@ -4,8 +4,9 @@
             <div class="col-md-5">
             <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
             {{todo.description}}        
-            <button class="btn btn-danger">
-            x
+            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary">
+                <span v-if="todo.checked">Desmarcar</span>
+                <span v-else>Concluído</span>
             </button>
             </div>
     </div>
