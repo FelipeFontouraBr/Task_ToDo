@@ -3,11 +3,11 @@
     <div class="col-md-7" :class="{checked: todo.checked}">
         <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
             {{todo.description}}        
-            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary">
+            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary" id="bt1">
                 <span v-if="todo.checked">Desmarcar</span>
                 <span v-else>Concluído</span>
             </button>
-            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger">Remover
+            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger ml-2" id="bt2">Remover
             </button>            
     </div>
 </div>
@@ -27,5 +27,11 @@ export default {
 .checked {
     text-decoration: line-through;
     color: lightblue;
+}
+#bt1 {
+    padding: 4px;
+}
+#bt2 {
+    padding: 4px;
 }
 </style>
