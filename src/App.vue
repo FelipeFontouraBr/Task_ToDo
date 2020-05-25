@@ -1,12 +1,12 @@
 <template>
 
 <div>
-  <div class="container">
+  <div class="container">    
     <form v-on:submit.prevent="addTodo(todo)">
       <div class="row">      
           <div class="col-md-6">
             <div class="input-group">
-              <input type="text" class="form-control" placeholder="New Task">
+              <input type="text" v-model="todo.description" class="form-control" placeholder="New Task">
             </div>
           </div>
           <div class="col-md-4">

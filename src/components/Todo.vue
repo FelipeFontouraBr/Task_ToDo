@@ -1,31 +1,20 @@
 <template>
 <div class="row">
-    <div class="col-xs-10" :class="{checked: todo.checked}">
-        <table class="table">
-            <thead>
-            <tr>
-            <th>Task Name</th>
-            <th></th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr>
-            <td class="col-xs-11">
-            {{todo.description}}
-            </td>
-            <td class="col-xs-1">
+    <div class="col-md-7" :class="{checked: todo.checked}">
+            <div class="col-md-5">
+            <i class="fa fa-check-square fa-lg" aria-hidden="true"></i>
+            {{todo.description}}        
             <button class="btn btn-danger">
             x
             </button>
-            </td>
-            </tr>
-            </tbody>
-        </table>
+            </div>
     </div>
 </div>
 </template>
 
 <script>
+import "font-awesome/css/font-awesome.css"
+
 export default {
     props: {
         todo: {type: Object, required: true}
