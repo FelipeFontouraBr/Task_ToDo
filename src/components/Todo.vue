@@ -1,9 +1,9 @@
 <template>
 <div class="row">
-    <div class="col-md-7" :class="{checked: todo.checked}">
-        <i class="fa fa-clock-o fa-lg" aria-hidden="true" :class="todo.checked ? 'fa-check-square' : 'fa-clock-o'"></i>
+    <div class="col-md" :class="{checked: todo.checked}">
+        <i class="fa fa-clock-o fa-lg mr-3" aria-hidden="true" :class="todo.checked ? 'fa-check-square' : 'fa-clock-o'"></i>
             {{todo.description}}        
-            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary" id="bt1">
+            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary ml-5" id="bt1">
                 <span v-if="todo.checked">Desmarcar</span>
                 <span v-else>Concluído</span>
             </button>
