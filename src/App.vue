@@ -32,19 +32,22 @@ export default {
   data() {
     return { todos: [], todo: { checked: false}};
   },
-  methods: {
+  methods: { // Ação de adicionar
     addTodo(todo) {
       todo.id = Date.now();
       this.todos.push(todo);
       this.todo = { checked: false};
     },
-    toggleTodo(todo){ //Função do onclick
+    toggleTodo(todo){ //Função do onclick -> Vamos alterar o estado do componente (trocar para true ou false)
       const index = this.todos.findIndex(item => item.id === todo.id) 
       if (index > -1){
         const checked = !this.todos[index].checked;
-        this.$set(this.todos, index, {...this.todos[index, checked]});
+        this.$set(this.todos, index, {...this.todos[index], checked});
       }
     },
+    removeTodo(todo) {
+      
+    }
   }
   }
 
