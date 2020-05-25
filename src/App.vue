@@ -2,9 +2,9 @@
 
 <div>
   <div class="container">
-    <form id="formu">
+    <form>
       <div class="row">      
-          <div class="col-md-6">
+          <div class="col-md-5">
             <div class="input-group">
               <input type="text" class="form-control">
             </div>
@@ -14,6 +14,9 @@
           </div>      
       </div>
     </form>
+    <div class="todo-list"><!--Aqui vamos colocar as configurações do todo-list-->
+
+    </div>
   </div>
 </div>
 
@@ -33,8 +36,5 @@ export default {
 .row {
   margin-top: 180px;
   margin-left: 200px;  
-}
-#formu {
-  background-color: blue;
 }
 </style>
