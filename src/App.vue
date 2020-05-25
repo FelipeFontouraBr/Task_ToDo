@@ -7,11 +7,11 @@
       <div class="row" id="ipt">      
           <div class="col-md-6" >
             <div class="input-group" >
-              <input type="text" v-model="todo.description" class="form-control" placeholder="New Task" >
+              <input type="text" v-model="todo.description" class="form-control" placeholder="Nova Tarefa" >
             </div>
           </div>
           <div class="col-md-4">
-            <button class="btn btn-primary">Added</button>
+            <button class="btn btn-primary">Adicionar</button>
           </div>      
       </div>
     </form>
@@ -72,5 +72,8 @@ export default {
 #img {
   max-width: 160px;
   margin-left: 360px;
+}
+.form-control {
+  border: 1px solid rgb(155, 183, 206);
 }
 </style>
