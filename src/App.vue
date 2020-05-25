@@ -1,23 +1,21 @@
 <template>
 
-<div>
-  <div class="container">
-    <img src="@/assets/task.png" id="img">  
-    <form v-on:submit.prevent="addTodo(todo)">
-      <div class="row" id="ipt">      
-          <div class="col-md-6" >
-            <div class="input-group" >
-              <input type="text" v-model="todo.description" class="form-control" placeholder="Nova Tarefa" >
-            </div>
+<div class="container">
+  <img src="@/assets/task.png" id="img">  
+  <form v-on:submit.prevent="addTodo(todo)">
+    <div class="row" id="ipt">      
+        <div class="col-md-6" >
+          <div class="input-group" >
+            <input type="text" v-model="todo.description" class="form-control" placeholder="Nova Tarefa" >
           </div>
-          <div class="col-md-4">
-            <button class="btn btn-primary">Adicionar</button>
-          </div>      
-      </div>
-    </form>
-    <div class="todo-list"><!--Aqui vamos colocar as configurações do todo-list-->
-      <todo v-for="t in todos" :key="t.id" @toggle="toggleTodo" @remove="removeTodo" :todo="t"/>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary">Adicionar</button>
+        </div>      
     </div>
+  </form>
+  <div class="todo-list"><!--Aqui vamos colocar as configurações do todo-list-->
+    <todo v-for="t in todos" :key="t.id" @toggle="toggleTodo" @remove="removeTodo" :todo="t"/>
   </div>
 </div>
 

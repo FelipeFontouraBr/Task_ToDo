@@ -7,8 +7,7 @@
                 <span v-if="todo.checked">Desmarcar</span>
                 <span v-else>Concluído</span>
             </button>
-            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger ml-2" id="bt2">Remover
-            </button>            
+            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger ml-2" id="bt2">Remover</button>            
     </div>
 </div>
 </template>
