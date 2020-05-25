@@ -1,7 +1,8 @@
 <template>
 
 <div>
-  <div class="container">    
+  <div class="container">
+    <img src="@/assets/task.png" id="img">  
     <form v-on:submit.prevent="addTodo(todo)">
       <div class="row" id="ipt">      
           <div class="col-md-6" >
@@ -58,14 +59,18 @@ export default {
 
 <style>
 .container {
-  margin-top: 180px;
+  margin-top: 160px;
   margin-left: 100px;
 }
 .row {
-  margin-top: 40px;
+  margin-top: 30px;
   margin-left: 210px;
 }
 #ipt {
   margin-left: 200px;
+}
+#img {
+  max-width: 160px;
+  margin-left: 360px;
 }
 </style>
