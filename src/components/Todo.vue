@@ -2,7 +2,7 @@
 <div class="row">
     <div class="col-md-7" :class="{checked: todo.checked}">
             <div class="col-md-5">
-            <i class="fa fa-check-square fa-lg" aria-hidden="true"></i>
+            <i class="fa fa-clock-o fa-lg" aria-hidden="true"></i>
             {{todo.description}}        
             <button class="btn btn-danger">
             x
