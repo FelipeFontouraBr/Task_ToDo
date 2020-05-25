@@ -25,10 +25,11 @@
 <script>
 import "bootstrap/dist/css/bootstrap.css"
 import "font-awesome/css/font-awesome.css"
+import Todo from './components/Todo'
 
 export default {
   name: "app",
-  components: {},
+  components: { Todo },
   data() {
     return { todos: [], todo: { checked: false}};
   },
