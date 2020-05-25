@@ -1,14 +1,16 @@
 <template>
 <div class="row">
-    <div class="col-md" :class="{checked: todo.checked}">
+    <div class="col-md-5" :class="{checked: todo.checked}">
         <i class="fa fa-clock-o fa-lg mr-3" aria-hidden="true" :class="todo.checked ? 'fa-check-square' : 'fa-clock-o'"></i>
-            {{todo.description}}        
-            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary ml-5" id="bt1">
+            {{todo.description}}
+    </div>
+        <div class="col-md-5">        
+            <button v-on:click="$emit('toggle', todo)" class="btn btn-outline-primary" id="bt1">
                 <span v-if="todo.checked">Desmarcar</span>
                 <span v-else>Concluído</span>
             </button>
-            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger ml-2" id="bt2">Remover</button>            
-    </div>
+            <button v-on:click="$emit('remove', todo)" class="btn btn-outline-danger ml-2" id="bt2">Remover</button>
+        </div>   
 </div>
 </template>
 
@@ -29,6 +31,7 @@ export default {
 }
 #bt1 {
     padding: 4px;
+    margin-left: 3px;
 }
 #bt2 {
     padding: 4px;
