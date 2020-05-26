@@ -4,3 +4,20 @@
 <h3 align="center">
 &#10004; TASK - ToDo 
 </h3>
+
+---
+
+<p>Development of an application for task management using Vue.JS</p>
+
+### Techologies 
+
+- Vue.js;
+- JavaScript;
+- Css3;
+- Bootstrap 4;
+- HTML 5;
+
+#### Presentation
+
+---
+Learning and Development - by Felipe Fontoura :computer: [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/)
