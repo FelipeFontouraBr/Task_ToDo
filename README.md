@@ -9,7 +9,7 @@
 
 <p>Development of an application for task management using Vue.JS</p>
 
-### Techologies 
+<h3> :ballot_box_with_check: Techologies</h3>
 
 - Vue.js;
 - JavaScript;
@@ -17,7 +17,7 @@
 - Bootstrap 4;
 - HTML 5;
 
-#### Presentation
+<h3> :beginner: Presentation</h3>
 
 ---
 Learning and Development - by Felipe Fontoura :computer: [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/)
