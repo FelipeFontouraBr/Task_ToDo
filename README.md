@@ -2,5 +2,5 @@
 </h1>
 
 <h3 align="center">
-TASK - ToDo &#10004;
+&#10004; TASK - ToDo 
 </h3>
