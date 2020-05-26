@@ -19,5 +19,6 @@
 
 <h3> :beginner: Presentation</h3>
 
+![img](https://github.com/FelipeFontouraBr/Task_ToDo/blob/master/src/assets/todo.gif)
 ---
 Learning and Development - by Felipe Fontoura :computer: [See my linkedin!](https://www.linkedin.com/in/fontourafelipe/)
